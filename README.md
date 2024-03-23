@@ -17,3 +17,6 @@ Objetivos Laborales:
 - Trabajar en Ciencia de Datos, IA o Investigacion
 - Crear un emprendimineto propio
 - Crear un juego para diferentes plataformas
+
+![FOTO](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/07241cc1-cafa-41a8-9922-fdcad22dee79)
+
