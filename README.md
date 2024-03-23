@@ -1,6 +1,9 @@
 # Repositorio_Personal
 Repositorio personal sesión 1
 ## Nombre: Julio Cesar Alvarez Casas
+
+![FOTO](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/07241cc1-cafa-41a8-9922-fdcad22dee79)
+
 ### Acerca de mi
 Estudiante de quinto ciclo de la universidad nacional de ingenieria, estudiante de la especialidad del Analitica de Datos en el instituto certus.
 Nivel de ingles avanzado, culminado en el centro de idiomas ICPNA.
@@ -18,5 +21,5 @@ Objetivos Laborales:
 - Crear un emprendimineto propio
 - Crear un juego para diferentes plataformas
 
-![FOTO](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/07241cc1-cafa-41a8-9922-fdcad22dee79)
+
 
