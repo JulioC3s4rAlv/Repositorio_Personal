@@ -1,2 +1,4 @@
 # Repositorio_Personal
-Repositorio sesión 1
+Repositorio personal sesión 1
+# Acerca de mi
+##Nombre: Julio Cesar Alvarez Casas
