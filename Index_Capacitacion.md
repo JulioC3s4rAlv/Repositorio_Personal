@@ -78,9 +78,12 @@ Este índice acelerará las búsquedas de empleados basadas en su ID_Cargo asign
 
 Índice para ID_Departamento en la tabla Programa_Capacitador:
 
-    CREATE INDEX idx_id_departamento ON Programa_Capacitador (id_departamento)
+    CREATE INDEX idx_id_departamento ON Programa_Capacitador (id_departamento);
 
 Este índice mejorará las búsquedas de programas de capacitación (Programa_Capacitador) según el departamento con el que están asociados (ID_Departamento).
+
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/e21dea7b-b5e1-4339-86d7-31a6252c6c37)
+
 
 ## Explicación:
 Se crean índices en ID_Cargo en la tabla Empleado e id_departamento en la tabla Programa_Capacitador. Estos índices son cruciales porque aceleran las búsquedas (operaciones SELECT) que involucran estas relaciones de clave externa.
@@ -109,6 +112,8 @@ Para implementar estos índices, deberías experimentar una mejora en el rendimi
         JOIN 
             Departamento D ON E.ID_Departamento = D.ID_Departamento;
 
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/c2a27c5a-90de-4bdf-8dec-c8ba736eebad)
+
 
 Explicación:
 Una vista temporal llamada Empleado_Cargo_Departamento se crea utilizando la sentencia CREATE TEMP VIEW.
@@ -124,6 +129,9 @@ Después de crear la vista temporal, puedes consultarla como una tabla regular p
 
     SELECT * FROM Empleado_Cargo_Departamento;
 
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/20640dd1-d6df-4cd8-920d-a41314f08332)
+
+
 Beneficios:
 
 Simplificación: En lugar de escribir consultas JOIN complejas repetidamente, puedes usar la vista Empleado_Cargo_Departamento para acceder fácilmente a los datos combinados.
@@ -133,6 +141,15 @@ Consideraciones:
 Naturaleza temporal: Las vistas temporales son específicas de la sesión y se eliminan automáticamente cuando finaliza la sesión o cuando se eliminan explícitamente por el usuario.
 Permisos: Asegúrate de que el usuario que ejecuta CREATE TEMP VIEW y las consultas posteriores tenga los permisos adecuados para acceder a las tablas subyacentes (Empleado, Cargo, Departamento).
 Este enfoque debería ayudar a acceder y consultar eficientemente datos relacionados con empleados, sus roles asignados (Cargo) y sus departamentos (Departamento). Ajusta la definición de la vista según tus requisitos específicos o los datos adicionales que desees incluir.
+
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/f354b242-fa41-497f-b214-761010f09013)
+
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/a1399671-bc8f-4f4c-ab2d-528ff9b457ec)
+
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/0661cf90-1752-4abe-929a-3e681dc4ac8c)
+
+![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/ccc7c985-39be-450a-a8ce-6192da09ffd1)
+
 
     CREATE INDEX idx_id_departamento ON Programa_Capacitador (ID_Departamento);
     CREATE INDEX idx_id_programa_c_sesion ON Sesion (ID_Programa_C);
