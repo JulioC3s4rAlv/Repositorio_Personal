@@ -157,6 +157,13 @@ Este enfoque debería ayudar a acceder y consultar eficientemente datos relacion
     CREATE INDEX idx_departamento_nombre_departamento ON Departamento(Nombre_Departamento);
     CREATE INDEX idx_programa_capacitador_fecha_inicio ON Programa_Capacitador(fecha_inicio);
 
+    CREATE INDEX idx_programa_capacitador_join ON Programa_Capacitador(id_departamento, fecha_inicio);
+    CREATE INDEX idx_sesion_join ON Sesion(id_programa_c);
+    CREATE INDEX idx_lista_matricula_join ON Lista_Matricula(id_programa_c);
+
+    -- Analyze and Update Statistics
+    VACUUM ANALYZE;
+
 Usado para la query de muestra de capacitaciones: 
 
     SELECT 
