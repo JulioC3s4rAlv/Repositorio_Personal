@@ -151,9 +151,11 @@ Este enfoque debería ayudar a acceder y consultar eficientemente datos relacion
 ![image](https://github.com/JulioC3s4rAlv/Repositorio_Personal/assets/164259064/ccc7c985-39be-450a-a8ce-6192da09ffd1)
 
 
-    CREATE INDEX idx_id_departamento ON Programa_Capacitador (ID_Departamento);
-    CREATE INDEX idx_id_programa_c_sesion ON Sesion (ID_Programa_C);
-    CREATE INDEX idx_id_programa_c_matricula ON Lista_Matricula (ID_Programa_C);
+    CREATE INDEX idx_programa_capacitador_id_departamento ON Programa_Capacitador(id_departamento);
+    CREATE INDEX idx_sesion_id_programa_c ON Sesion(id_programa_c);
+    CREATE INDEX idx_lista_matricula_id_programa_c ON Lista_Matricula(id_programa_c);
+    CREATE INDEX idx_departamento_nombre_departamento ON Departamento(Nombre_Departamento);
+    CREATE INDEX idx_programa_capacitador_fecha_inicio ON Programa_Capacitador(fecha_inicio);
 
 Usado para la query de muestra de capacitaciones: 
 
